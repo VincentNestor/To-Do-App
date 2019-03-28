@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+.App {
+  background-image: url(../images/thunderstorm.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  position: relative;
+  height: 70px;
+  opacity: .7;
+  background: rgba(255,255,255);
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 90vw;
+  transition: .2s;
+  display: flex;
+  box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 0.322);
+}
+label.active{
+  opacity: 1;
+}
+section{
+  position: absolute;
+  padding: 5px 20px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-30%);
+  opacity: 1;
+  transition: .3s cubic-bezier(0.18, 0.58, 0.59, 1.04);
+  z-index: 1;
+  font-size: 20px;
+}
+input{
+  padding-left: 50px;
+  transition: .3s cubic-bezier(0.18, 0.58, 0.59, 1.04);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border:none;
+  font-size: 20px;
+  background: transparent;
+  z-index: 1000;
+
+}
+
+input:focus{
+  padding-left: 20px;
+}
+input:focus ~ section{
+  padding: 5px 10px;
+  opacity: 0;
+}
+button{
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family:'Average Sans', sans-serif;
+  color:snow;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 3px;
+  opacity: .8;
+  transition: .2s;
+  background-image: linear-gradient(#0adba1,#8dd859)
+}
+button:hover,
+label:hover{
+  opacity: 1;
+
+}
+input[type="text"], input[type="password"], button, textarea, select { 
+  outline: none;
+}
+h3.selectName{
+  font-size: 35px;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 30%;
+  font-weight: 400;
+  text-shadow: 4px 4px 1px black;
+  color: aliceblue;
+}
+h3.welcome{
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: snow;
+  font-weight: 400;
+  text-shadow: 4px 4px 1px black;
+}
+span.reset{
+}
+div.cont{
+  display: flex;
+  max-width: 800px;
+  width: 70vw;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 90vw;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+}
+div.selectingWallpaper{
+  color: snow;
+  letter-spacing: 1px;
+  font-size: 17px;
+  position: fixed;
+  z-index: 11;
+  left: 5px;
+  bottom: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+div.wallpapers{
+  position: fixed;
+   height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.425);
+  z-index: -10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+div.wallpapers div{
+  height: 30%;
+  flex-basis: 30%;
+  border-radius: 4px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 10px 10px 55px 2px rgba(0, 0, 0, 0.5);
+}
+div.wallpapers div:nth-child(1){
+  background-image: url('../images/Bridge.jpg');
+}
+
+div.wallpapers div:nth-child(2){
+  background-image: url('../images/sky.jpg');
+
+}
+div.wallpapers div:nth-child(3){
+  background-image: url('../images/bubble.jpg');
+
+}
+div.wallpapers div:nth-child(4){
+  background-image: url('../images/bubblesSoap.jpg');
+
+}
+div.wallpapers div:nth-child(5){
+  background-image: url('../images/lightbulb.jpg');
+
+}
+div.wallpapers div:nth-child(6){
+  background-image: url('../images/thunderstorm.jpg');
+
+}
