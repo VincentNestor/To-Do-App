@@ -89,27 +89,7 @@ class App extends Component {
             }
         }
     }
-    addTask = () => {
-
-        if (this.state.work) {
-
-            const tasks = {
-                id: this.integration.counterId,
-                work: this.state.work,
-                important: false,
-                done: false
-            };
-            this.setState(prevState => ({
-                tasks: [
-                    ...prevState.tasks,
-                    tasks
-                ],
-                work: ''
-            }))
-            this.integration.counterId++
-        }
-
-    }
+    
     handleChangeName = e => {
         this.setState({name: e.target.value})
     }
@@ -203,7 +183,6 @@ console.log(wallpaper)
                         <section>
                             <i className="far fa-edit"></i>
                         </section>
-                        <button className="add" onClick={this.addTask}>Dodaj</button>
                     </label>
                     <div className="cont">
                         <h4>{tasks.length <= 4
