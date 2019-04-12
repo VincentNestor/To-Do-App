@@ -28,9 +28,7 @@ class App extends Component {
     delete = id => {
         let tasks = [...this.state.tasks];
         tasks = tasks.filter(task => task.id !== id)
-        console.log(this.integration.counterId)
         this.integration.tasksKillCounter--;
-        console.log(this.integration.counterId)
         this.setState({tasks})
     }
     addWork = e => {
@@ -63,7 +61,6 @@ class App extends Component {
                     this.integration.tasksKillCounter++
 
                 }
-                console.log(this.integration.motivCounter)
             }
         })
         this.setState({tasks})
