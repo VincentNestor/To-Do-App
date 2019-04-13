@@ -201,8 +201,8 @@ console.log(wallpaper)
                     <ul>
                         {tasksList}
                     </ul>
-                    <div onClick = {this.addActive}className="selectingWallpaper">
-                    Select background
+                    <div className="selectingWallpaper">
+                    <p onClick = {this.addActive} >Select background</p> <p>Inspired by <a target="blank" href="https://inspiringtodoapp.com/">inspiringtodoapp.com/</a></p>
                     </div>
                 </div>
             );

@@ -118,14 +118,20 @@ ul{
 div.selectingWallpaper{
   color: snow;
   letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 12px;
   position: fixed;
   z-index: 11;
-  left: 5px;
   bottom: 10px;
   text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+div.selectingWallpaper p:nth-child(1){
+  font-size: 17px;
+}
+
 div.wallpapers{
   position: fixed;
    height: 100vh;
