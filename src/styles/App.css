@@ -9,7 +9,7 @@
   background-image: url(../images/thunderstorm.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,8 +101,7 @@ h3.welcome{
   font-weight: 400;
   text-shadow: 4px 4px 1px black;
 }
-span.reset{
-}
+
 div.cont{
   display: flex;
   max-width: 800px;

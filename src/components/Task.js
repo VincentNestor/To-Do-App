@@ -10,9 +10,6 @@ const Task = (props) => {
     const styleCircle = {
         color:"green",
     }
-    const styleLi = {
-       
-    }
 
     return (  
         <>

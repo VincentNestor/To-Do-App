@@ -21,7 +21,7 @@ class App extends Component {
         counterId: 3,
         name: '',
         motivCounter:0,
-        tasksKillCounter: this.state.tasks.length,
+        tasksKillCounter: 0,
         tasksKillMotiv: ['','Piękny początek', 'Niesamowite, tak trzymaj', 'Tripple-kill', 'Sukces', 'Pięć zadań za tobą, rządzisz','Masz nadprzyrodzone siły' ],
         tasksKill: ['', 'Jedno zadanie, świetnie', 'Dwa zadania, to pestka', 'Trzy zadania, do dzieła', 'Cztery, nic strasznego', 'Trochę jest do zrobienia']
     }
@@ -159,6 +159,8 @@ console.log(wallpaper)
             important={this.addImportant}
             done={this.doneTask}
             task={task}/>);
+            console.log(tasksKillCounter);
+            
         if (this.integration.name) {
             return (
                 <div className="App">
