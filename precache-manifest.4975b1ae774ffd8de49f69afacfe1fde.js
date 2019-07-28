@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/ToDoApp/static/media/bubble.47afcf6b.jpg"
   },
   {
-    "revision": "b618798a762bbf772699",
-    "url": "/ToDoApp/static/css/main.677660ae.chunk.css"
+    "revision": "d08165d6606b9bf9f7d6",
+    "url": "/ToDoApp/static/css/main.3613d301.chunk.css"
   },
   {
     "revision": "fb1067834985d33aa2a1",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/ToDoApp/static/media/lightbulb.db3bc4d3.jpg"
   },
   {
-    "revision": "b618798a762bbf772699",
-    "url": "/ToDoApp/static/js/main.d6b1764b.chunk.js"
+    "revision": "d08165d6606b9bf9f7d6",
+    "url": "/ToDoApp/static/js/main.8ea6b9cc.chunk.js"
   },
   {
     "revision": "c53df244a82c95d02d97d373c39c7030",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/ToDoApp/static/media/sky.1aacd0d3.jpg"
   },
   {
-    "revision": "cc7584b449a771df5b13bbe496caffb0",
+    "revision": "3d70bb9b1f6ba3fefcb5a38acc2b3442",
     "url": "/ToDoApp/index.html"
   }
 ];
