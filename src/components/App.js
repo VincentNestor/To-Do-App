@@ -112,7 +112,6 @@ class App extends Component {
     changeWallpaper = e => {
       const wallpaper = e.target.getAttribute('data-wallpaper');
       const App = document.querySelector('.App');
-console.log(wallpaper)
       if(wallpaper === "bridge"){
         App.style.backgroundImage = `url(${Bridge})`;
 
@@ -159,7 +158,6 @@ console.log(wallpaper)
             important={this.addImportant}
             done={this.doneTask}
             task={task}/>);
-            console.log(tasksKillCounter);
             
         if (this.integration.name) {
             return (
